@@ -1,0 +1,22 @@
+For this effect, we have an always-visible underline, but on hover, we’ll grow the underline to the top of the anchor.
+Since this underline will slide underneath the text, it’s important to make sure you use colors that will pass a contrast checker to ensure good accessibility.
+Since we want the underline to always be visible, note that we changed the default background-size’s width to 100%. To slide the underline to the top of the link, we change the background-size’s height to 100%.
+
+
+
+
+<style>
+.class {
+color: black;
+background-image: linear-gradient(#d99a5a, #d99a5a);
+background-size: 100% 0.1em;
+background-position-y: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.2s ease-in-out;
+}
+.class:hover,
+.class:focus,
+.class:active {
+background-size: 100% 100%;
+}
+</style>
