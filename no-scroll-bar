@@ -1,0 +1,6 @@
+<style>
+/* removing scroll bar(vertical) */
+::-webkit-scrollbar {
+  display:none;
+}
+</style>
